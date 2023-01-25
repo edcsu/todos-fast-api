@@ -9,7 +9,7 @@ class Todo(BaseModel):
         Schema_extra = {
             "Example": {
                 "id": 1,
-                "item": "Example schema!"
+                "item": "Example todo!"
             }
         }
 
@@ -19,6 +19,7 @@ class TodoItem(BaseModel):
    class Config:
        schema_extra = {
            "example": {
+                "id": 1,
                "item": "Read the next chapter of the book"
             } 
         }
@@ -31,10 +32,12 @@ class TodoItems(BaseModel):
             "example": {
                 "todos": [
                     {
-                        "item": "Example schema 1!"
+                        "id": 1,
+                        "item": "Example todo 1!"
                     }, 
                     {
-                        "item": "Example schema 2!"
+                        "id": 2,
+                        "item": "Example todo 2!"
                     } ]
             } 
         }
