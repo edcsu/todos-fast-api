@@ -33,7 +33,7 @@
          flush">
                 {% for todo in todos %}
                 <li class="list-group-item">
-                    {{ loop.index }}. <a href="/todo/{{loop.index}}"> {{
+                    {{ loop.index }}. <a href="/todos/{{loop.index}}"> {{
                         todo.item }} </a>
                 </li>
                 {% endfor %}
